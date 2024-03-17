@@ -16,6 +16,7 @@ function move(image){
     }
 }
 
+
 move(newImage('assets/green-character.gif')).to(100, 250)
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
@@ -41,7 +42,7 @@ move(newImage('assets/well.png')).to(500, 575)
 
 function newItem(url){
     let item = newImage(url)
-    item.addEventListener('click', () => {
+    item.addEventListener('dblclick', () => {
         item.remove()
         let inventoryItem = document.createElement('img')
         inventoryItem.src = url;
